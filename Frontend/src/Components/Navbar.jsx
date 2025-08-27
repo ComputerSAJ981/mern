@@ -22,7 +22,7 @@ const Navbar = () => {
   }
   return (
     <div className="bg-black">
-      <div id="nav" className='dark:text-white dark:bg-transparent text-white bg-transparent flex h-24 items-center max-w-[1240px] m-auto px-4' >
+      <div id="nav" className='dark:text-white dark:bg-black text-white bg-black flex h-24 items-center max-w-[1240px] m-auto px-4' >
         <h1 className='w-full text-3xl font-bold hover:text-sky-400 dark:hover:text-[#00df90] text-emerald-400 dark:text-sky-400'>Portfolio</h1>
 
         <ul className='md:flex hidden'>
