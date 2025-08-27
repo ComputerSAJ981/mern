@@ -32,7 +32,7 @@ const Navbar = () => {
             <li className='p-4 hover:text-emerald-400 dark:hover:text-sky-400 duration-200'><NavLink className={({isActive})=>isActive ? 'underline underline-offset-4 font-bold decoration-emerald-400 dark:decoration-sky-400 dark:text-sky-400 text-emerald-400' : ''} to="/gallery">Gallery</NavLink></li>
             <li className='p-4 hover:text-emerald-400 text-sky-400 dark:text-emerald-400  dark:hover:text-sky-400 duration-200'><NavLink className={({isActive})=>isActive ? 'underline underline-offset-4 font-bold decoration-emerald-400 dark:decoration-sky-400 dark:text-sky-400 text-emerald-400' : ''} to="/signup">Signup</NavLink></li>
         </ul>
-        <button onClick={ToggleChange} id="modebtn" className="dark:bg-black dark:text-black hover:scale-105 absolute right-6 top-20 bg-black text-black rounded-md cursor-pointer z-20">{mode ? <CiCloudSun size={40} className="m-1 p-1 bg-sky-400 border-2 border-sky-400 rounded-lg"/> : <PiPlant size={40} className="m-1 p-1 bg-emerald-400 border-2 border-emerald-400 rounded-lg "/>} </button>
+        <button onClick={ToggleChange} id="modebtn" className="dark:bg-transparent dark:text-black hover:scale-105 absolute right-6 top-20 bg-transparent text-black rounded-md cursor-pointer z-20">{mode ? <CiCloudSun size={40} className="m-1 p-1 bg-sky-400 border-2 border-sky-400 rounded-lg"/> : <PiPlant size={40} className="m-1 p-1 bg-emerald-400 border-2 border-emerald-400 rounded-lg "/>} </button>
         <div onClick={handleNavbar} className="cursor-pointer block md:hidden">
             {nav ? <LuMenu size={28} className="dark:text-sky-400 text-emerald-400"/> : <RxCross2 size={28} className="dark:text-sky-400 text-emerald-400" />}
         </div>
